@@ -1,0 +1,356 @@
+body {
+    background-color: #111111;
+}
+
+.header-cc {
+    margin: 0.5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    color: #FFBF00;
+}
+.header-cc p {
+    font-size: 20px;
+}
+.github-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.navigation-bar {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.navigation-bar ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap:50px;
+}
+
+.navigation-bar ul li {
+    margin-right: 30px;
+    font-size: 25px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.home {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 150px; 
+}
+.home h1{
+    color: #FFBF00;
+}
+.myimage{
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #FFBF00;
+}
+.home h3{ 
+    color:  #FFBF00;
+    animation: slide 10s linear infinite;
+}
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%; 
+        color: white;
+    }
+    100% {
+        left: 0;
+        color: #FFBF00;
+    }
+}
+
+.about{
+    margin-top: 250px;
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+.description {
+    background-color: #222222;
+    border-radius: 40px;
+    padding: 2%;
+    gap: 5%;
+    height: 25%;
+    margin: 0.5% 5%;
+    display: flex;
+    align-items: center;
+}
+.text-description{
+   margin-left: 5%;
+   font-size: 200%;
+    flex: 1;
+    color: white;
+}
+.about-me{
+    color: white;
+    font-size: 50px;
+}
+.yellow-line {
+    display: inline-block;
+    width: 60%; 
+    height: 2px; 
+    background-color: #FFBF00;
+    margin-right: 10px; 
+}
+.myimage1{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #FFBF00;
+}
+.skills-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 boxes in a row by default */
+    gap: 2%;
+    grid-row-gap: 40px;
+}
+.box {
+    height: 100px;
+    width: 20;
+    box-shadow: 0 0 10px #FFBF00;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    .skills-box {
+      grid-template-columns: repeat(2, 1fr); /* 2 boxes in a row for smaller screens */
+    }
+  }
+ .competance{
+    margin: 2% 10%;
+    color: white;
+ }
+ .skills{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
+ .type-skills{
+    display: flex;
+    flex-direction: row;
+    gap:50px; 
+    
+ }
+ .tech-stock,.tools{
+    color:#FFBF00 ;
+    width: 250px;
+    height: 40px;
+    font-size: 50px;
+    margin-bottom: 35px;
+    background-color: #3e3a11  ;
+    padding: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+ }
+ .image2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+ }
+ .projects{
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+    color: white;
+    margin: 0.5% 5%;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+ }
+ .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+}
+.name-sec{
+    font-size: 100px;
+    color: #FFBF00; 
+    margin-bottom: 40px;
+}
+.text1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+.text2{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #3e3a11;
+
+}
+ .projet{
+    height: 480px;
+    width: 430px;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #222222;
+    align-items: center;
+ }
+ .projet p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px; 
+}
+ .proj-image{
+    width: 400px;
+    height: 250px;
+    border-radius: 5%;
+ }
+ .proj-info{
+    color: #FFBF00;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    margin-top: auto;
+    align-items: center;
+ }
+ .goto-github{
+    width: 30px;
+    height: 30px;
+ }
+ .proj-des{
+    margin: 0px 20px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .footer{ 
+    background: linear-gradient(to left  , #111111, #3e3a11);
+    color: #fff;
+    padding: 100px 0 30px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.row{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.col1{
+    flex-basis: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.logo{
+    width: 70%;
+    margin-bottom: 30px;
+}
+.col ul  {
+    display:  flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.col ul li{
+    display: flex;
+    gap: 5%;
+    font-size: 110%;
+    align-items: center;
+}
+.col h3{
+    font-size: 40px;
+    padding: 50px 0  ;
+}
+.col a p {
+    font-size: 15px;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .far {
+    font-size: 18px;
+    margin-right:10px ;
+}
+form input {
+    width: 100%;   
+    background-color: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+}
+form button {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas { 
+    font-size: 16px;
+    color: #ccc;
+}
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width: 95%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright {
+    text-align: center;
+}
