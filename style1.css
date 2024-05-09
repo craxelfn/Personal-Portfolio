@@ -11,7 +11,7 @@ body {
     color: #FFBF00;
 }
 .header-cc p {
-    font-size: 20px;
+    font-size: 20pxs;
 }
 .github-image {
     height: 50px;
@@ -354,3 +354,289 @@ hr{
 .copyright {
     text-align: center;
 }
+@media (max-width: 768px){
+    .header-cc {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 30%;
+        margin: 20px 10px;
+    }
+    .header-cc p {
+        font-size: 20px;
+        
+    }
+    .github-image {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .navigation-bar {
+        flex-grow: 1; 
+        display: flex;
+        justify-content: center; 
+    }
+    
+    .navigation-bar ul {
+        list-style-type: none; 
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap:35px;
+    }
+    
+    .navigation-bar ul li {
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 25px;
+    }
+
+
+
+
+    .home {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 70%;
+        margin-left: 70vh;
+        font-size: 300%;
+    }
+    .home h1{
+        color: #FFBF00;
+    }
+    .myimage{
+        height: 400px;
+        width:  400px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #FFBF00;
+    }
+    .home h3{ 
+        color:  #FFBF00;
+        animation: slide 10s linear infinite;
+    }
+    @keyframes slide {
+        0% {
+            left: 0;
+        }
+        50% {
+            left: 100%; 
+            color: white;
+        }
+        100% {
+            left: 0;
+            color: #FFBF00;
+        }
+    }
+
+
+
+
+
+
+    .about{
+        margin-top: 150px;
+        display: flex; 
+        flex-direction: column;
+        margin-bottom: 200px;
+        margin-left: 5%;
+    }
+    .description {
+        background-color: #222222;
+        border-radius: 40px;
+        padding: 2%;
+        height: 25%;
+        width: 48em;
+        margin: 25% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-description{
+       margin-left: 5%;
+       font-size: 200%;
+        flex: 1;
+        color: white;
+        padding: 0px 10px;
+        margin-bottom: 30px;
+    }
+    .about-me{
+        color: white;
+        font-size: 50px;
+    }
+    .yellow-line {
+        display: inline-block;
+        width: 60%; 
+        height: 2px; 
+        background-color: #FFBF00;
+        margin-right: 10px; 
+    }
+    .myimage1{
+        margin-left: 10%;
+        margin-bottom: 50px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #FFBF00;
+    }
+    .skills-box{
+        gap: 40px;
+    }
+    .box {
+        height: 100px;
+        width: 20;
+        box-shadow: 0 0 10px #FFBF00;
+        padding: 20px;
+        display: flex;
+        text-align: center;
+        gap: 50px;
+        font-size: 30px;
+      }
+    
+      @media (max-width: 768px) {
+        .skills-box {
+          grid-template-columns: repeat(2, 1fr); /* 2 boxes in a row for smaller screens */
+        }
+      }
+     .competance{
+        color: white;
+        margin: 0% 30%;
+     }
+     .skills{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+     }
+     .type-skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+        margin: auto;      
+     }
+     .tech-stock,.tools{
+        color:#FFBF00 ;
+        height: 50px;
+        font-size: 40px;
+        background-color: #3e3a11  ;
+        padding: 20px;
+        padding-bottom: 30px;
+        align-items: center;
+     }
+     .image2{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+     }
+
+
+
+
+
+ 
+
+ 
+ .projects{
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+    color: white;
+    margin: 0.5% ;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+    padding: 5%;
+ }
+ .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding: 0;
+    
+ }
+.name-sec{
+    font-size: 100px;
+    color: #FFBF00; 
+    margin-bottom: 30px;
+    margin: auto;
+    margin-left: 45vh;
+}
+.text1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    white-space: nowrap;
+    padding: 20px 0 ;
+    margin: auto;
+    margin-left: 40vh;
+    align-items: center;
+}
+.text2{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #3e3a11;
+    white-space: nowrap;
+    margin: auto;
+    margin-left: 40vh;
+    align-items: center;
+    padding: 20px 0 ;
+ }
+ .col1{
+    margin-left: 40vh;
+ }
+ .col{
+    margin-left: 30vh;
+ }
+ .copyright{
+    white-space: nowrap;
+    margin-left: 55vh; 
+ }
+ .hr-footer{
+    width: 100%;
+ }
+
+}
+ .projet{
+    height: 480px;
+    width: 95%;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #222222;
+    align-items: center;
+ }
+
+ .proj-image{
+    width: 400px;
+    height: 250px;
+    border-radius: 5%;
+ }
+ .proj-info{
+    color: #FFBF00;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    margin-top: auto;
+    align-items: center;
+ }
+ .goto-github{
+    width: 30px;
+    height: 30px;
+ }
+ .proj-des{
+    margin: 0px 20px;
+ }
+
+ .social-icons{
+    display: flex;
+ }
+ .text-portf{
+    display: flex;
+    flex-direction: column;
+    margin-left: 29vh;
+
+ }
+
+
